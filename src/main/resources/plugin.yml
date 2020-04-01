@@ -1,0 +1,21 @@
+#name, main, version and api are required
+name: CoronaAddon-Nukkit
+main: nycuro.Loader
+#remember version and api is string, don't write it like this: 1.0.0, or there will be an exception
+version: "1.0"
+api: ["1.0.5"]
+load: POSTWORLD
+author: NycuRO
+description: This plugin implements Corona in Nukkit Servers!
+
+commands:
+  corona:
+    description: Gives you corona!
+    usage: "/corona"
+    aliases: ["ncov", "coronavirus"]
+    permission: nycuro.corona
+    permission-message: "You do not have the required permission to run /corona"
+permissions:
+  nycuro.corona:
+    description: "Allows the user to run the corona command"
+    default: true
