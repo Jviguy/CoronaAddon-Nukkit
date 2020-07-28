@@ -21,6 +21,7 @@ public class Loader extends PluginBase {
     @Override
     public void onEnable() {
         this.getLogger().info(TextFormat.DARK_GREEN + "CORONA ENABLED! BE READY!");
+        getServer()->getPluginManager()->registerEvents(new Listener(), this);
     }
 
     @Override
